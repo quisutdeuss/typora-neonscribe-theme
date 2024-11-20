@@ -10,7 +10,7 @@
     --of-dark-color2: #1e1e3d;
     --of-strong: #ff6666;
     --of-strong-code: #00ffa6;
-    --of-font-size: 15px; /*字体大小*/
+    --of-font-size: 16.5px; /*字体大小*/
     --of-selection: #4a89dc;
     --of-selection-text: white;
 
@@ -354,7 +354,8 @@ img {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #ff69b4; /* 霓虹粉色下划线 */
     outline: 0;
 }
 
@@ -563,7 +564,7 @@ a:hover {
 }
 
 .md-inline-math script {
-    color: #81b1db;
+    color: #ffd700;
 }
 
 
@@ -859,12 +860,12 @@ h6.md-focus .md-attr,
 }
 
 .md-comment {
-    color: var(--other-main-color);
+    color: #00ffa6;  /* 改成霓虹绿色，和代码注释一样 */
     opacity: 0.8;
 }
 
 .md-inline-math svg {
-    color: #c6c1b8;
+    color: #ffd700;
 }
 
 #math-inline-preview .md-arrow:after {
@@ -1393,6 +1394,7 @@ footer {
 .md-task-list-item>input {
     margin-left: -1.3em;
     margin-top: 0.3rem;
+    appearance: none; 
     -webkit-appearance: none;
 }
 

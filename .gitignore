@@ -6,5 +6,6 @@ Thumbs.db
 node_modules/
 
 docs/
+docs/neonscribe.md
 docs/mermaid 自定义样式测试.md
 docs/mermaid 主题样式测试.md
