@@ -1,0 +1,118 @@
+/* Mermaid 图表主题样式 - NeonScribe Theme */
+:root {
+  --mermaid-theme: dark;
+}
+
+/* 默认节点样式 */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon,
+.mermaid .node path {
+  fill: #2ecc71; /* 荧光绿 */
+  stroke: #6c5ce7; /* 深紫色 */
+  stroke-width: 2px;
+}
+
+/* 默认文字样式 */
+.mermaid .label {
+  color: #6c5ce7; /* 深紫色 */
+  font-family: var(--text-font);
+}
+
+/* 连接线样式 */
+.mermaid .edgePath .path {
+  stroke: #6c5ce7; /* 深紫色 */
+  stroke-width: 2px;
+}
+
+/* 箭头样式 */
+.mermaid .arrowheadPath {
+  fill: #6c5ce7; /* 深紫色 */
+  stroke: none;
+}
+
+/* 连接线文字样式 */
+.mermaid .edgeLabel {
+  background-color: transparent;
+  color: #6c5ce7; /* 深紫色 */
+}
+
+/* 状态图样式 */
+.mermaid .stateGroup rect {
+  fill: #2ecc71; /* 荧光绿 */
+  stroke: #6c5ce7; /* 深紫色 */
+}
+
+.mermaid .stateGroup .state-title {
+  fill: #6c5ce7; /* 深紫色 */
+}
+
+.mermaid .stateGroup .compositeState {
+  fill: #2ecc71; /* 荧光绿 */
+}
+
+/* 思维导图样式 */
+.mermaid .mindmap-node1 {
+  fill: #2ecc71; /* 荧光绿 */
+  stroke: #6c5ce7; /* 深紫色 */
+}
+
+.mermaid .mindmap-node2 {
+  fill: #4c5154; /* 深灰色 */
+  stroke: #6c5ce7; /* 深紫色 */
+}
+
+.mermaid .mindmap-node3 {
+  fill: #3c3f41; /* 深灰色 */
+  stroke: #2ecc71; /* 荧光绿 */
+}
+
+/* 类图样式 */
+.mermaid .classGroup rect {
+  fill: #2ecc71; /* 荧光绿 */
+  stroke: #6c5ce7; /* 深紫色 */
+}
+
+.mermaid .classGroup .title {
+  fill: #6c5ce7; /* 深紫色 */
+}
+
+.mermaid .classGroup .classText {
+  fill: white;
+}
+
+/* 预定义状态样式 */
+.mermaid .success-state {
+  fill: #2ecc71; /* 荧光绿 */
+  stroke: #00cc85 !important;
+}
+
+.mermaid .warning-state {
+  fill: #6c5ce7; /* 深紫色 */
+  stroke: #4a4d9b !important;
+}
+
+.mermaid .error-state {
+  fill: #cc5252; /* 深红色 */
+  stroke: #cc5252 !important;
+}
+
+/* 甘特图样式 */
+.mermaid .section0,
+.mermaid .section2 {
+  fill: #2ecc71; /* 荧光绿 */
+}
+
+.mermaid .section1,
+.mermaid .section3 {
+  fill: #4c5154; /* 深灰色 */
+}
+
+.mermaid .task0,
+.mermaid .task1,
+.mermaid .task2,
+.mermaid .task3 {
+  fill: #6c5ce7; /* 深紫色 */
+  stroke: #2ecc71; /* 荧光绿 */
+}

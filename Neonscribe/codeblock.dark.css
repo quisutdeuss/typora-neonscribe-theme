@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/** code highlight */
+
+.cm-s-inner .cm-variable,
+.cm-s-inner .cm-operator,
+.cm-s-inner .cm-property {
+    color: #00ffa6;  /* 改成和文档中行内代码一样的绿色 */
+}
+
+.cm-s-inner .cm-keyword {
+    color: #ff79c6;
+}
+
+.cm-s-inner .cm-tag {
+    color: #ff79c6;
+}
+
+.cm-s-inner .cm-attribute {
+    color: #50fa7b;
+}
+
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid #f8f8f2;
+    z-index: 3;
+}
+
+.cm-s-inner .cm-string {
+    color: #f1fa8c;
+}
+
+.cm-s-inner .cm-comment,
+.cm-s-inner.cm-comment {
+    color: #00ffa6 !important;  /* 使用和文档中一样的绿色 */
+}
+
+.cm-s-inner .cm-header,
+.cm-s-inner .cm-def,
+.cm-s-inner.cm-header,
+.cm-s-inner.cm-def {
+    color: white !important;  /* 改成和文档中标题一样的白色 */
+}
+
+.cm-s-inner .cm-quote,
+.cm-s-inner.cm-quote {
+    color: #686bdd !important;  /* 改成和文档中引用一样的颜色 */
+}
+
+.cm-s-inner .cm-hr {
+    color: #6272a4;
+}
+
+.cm-s-inner .cm-link {
+    color: #686bdd !important;  /* 改成和文档中链接一样的颜色 */
+}
+
+.cm-s-inner .cm-negative {
+    color: #ff5555;
+}
+
+.cm-s-inner .cm-positive {
+    color: #50fa7b;
+}
+
+.cm-s-inner .cm-string-2 {
+    color: #f1fa8c;
+}
+
+.cm-s-inner .cm-meta,
+.cm-s-inner .cm-qualifier {
+    color: #6272a4;
+}
+
+.cm-s-inner .cm-builtin {
+    color: #8be9fd;
+}
+
+.cm-s-inner .cm-bracket {
+    color: #f8f8f2;
+}
+
+.cm-s-inner .cm-atom,
+.cm-s-inner.cm-atom {
+    color: #686bdd !important;  /* 改成和文档中引用一样的颜色 */
+}
+
+.cm-s-inner .cm-number {
+    color: #bd93f9;
+}
+
+.cm-s-inner .cm-variable {
+    color: #f8f8f2;
+}
+
+.cm-s-inner .cm-variable-2 {
+    color: #f8f8f2;
+}
+
+.cm-s-inner .cm-variable-3 {
+    color: #8be9fd;
+}
+
+/* 添加对 Markdown 加粗和斜体的样式支持 */
+.cm-s-inner .cm-strong {
+    color: #ff79c6; /* Dracula pink - 与普通文档中的加粗颜色一致 */
+}
+
+.cm-s-inner .cm-em {
+    color: #8be9fd; /* Dracula cyan - 与普通文档中的斜体颜色一致 */
+}
+
+/* 代码框中行内代码的颜色 */
+.cm-s-inner .cm-variable,
+.cm-s-inner .cm-inline-code {
+    color: #00ffa6 !important;  /* 使用和文档中一样的绿色 */
+}
+
+.CodeMirror-selectedtext,
+.CodeMirror-selected {
+    background: #44475a;
+    color: #f8f8f2 !important;
+    text-shadow: none;
+}
+
+.CodeMirror-gutters {
+    border-right: none;
+    background-color: #282a36;
+}
