@@ -334,14 +334,16 @@ img {
 }
 /* 添加链接下划线标签 */
 a {
+    color: #ffffff;
     text-decoration: underline;
     text-decoration-color: #686bdd;  /* 默认是主题色蓝紫色 */
     outline: 0;
 }
 
 a:hover {
+    color: #00ffa6;
     text-decoration: wavy underline;  /* 悬停时变成波浪下划线 */
-    text-decoration-color: #00ffa6;  /* 霓虹绿色 */
+    text-decoration-color: #a5a7ff;  /* 霓虹绿色 */
     outline: 0;
 }
 
@@ -410,7 +412,7 @@ ol {
 }
 
 ul {
-    list-style: square;
+    list-style: disc;
 }
 
 ol {
@@ -542,19 +544,9 @@ hr {
     /* variable */
 }
 
-a {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
-
-a:hover {
-    color: #fff;
-}
-
 .md-inline-math script {
     color: #ffd700;
 }
-
 
 /* 高亮颜色 */
 mark {
