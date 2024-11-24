@@ -107,7 +107,7 @@ p + p {                /* 这个选择器表示：当一个段落后面紧跟着
 
 /* HTML 标签样式 */
 b, strong {
-color: #ff79c6 !important;  /* Dracula pink */
+color: #686bdd !important;  /* Dracula pink */
 }
     
 sup {
@@ -343,7 +343,7 @@ a {
 a:hover {
     color: #00ffa6;
     text-decoration: wavy underline;  /* 悬停时变成波浪下划线 */
-    text-decoration-color: #a5a7ff;  /* 霓虹绿色 */
+    text-decoration-color: #00ffa6;  /* 霓虹绿色 */
     outline: 0;
 }
 
@@ -544,8 +544,8 @@ hr {
     /* variable */
 }
 
-.md-inline-math script {
-    color: #ffd700;
+.md-inline-math script{
+    color: #00ffa6;      /* 改成和文档中行内代码一样的绿色 */
 }
 
 /* 高亮颜色 */
@@ -559,33 +559,27 @@ mark {
     -webkit-box-decoration-break: clone;
 }
 
-/* 高亮文本中的链接样式 */
-
+/* 高亮文本中的链接和括号样式 */
 mark a,
-mark .md-content.md-url {
-    color: #ffb86c !important;  /* Dracula 橙色，添加 !important 确保优先级 */
+mark .md-content.md-url,
+mark .md-meta.md-before.md-meta-i,
+mark .md-meta.md-before,
+mark .md-meta.md-after {
+    color: #00ffa6 !important;
 }
 
-/* 高亮文本中链接悬停效果 */
-
+/* 链接悬停效果 */
 mark a:hover {
-    color: #686bdd !important;  /* 悬停时变成主题色，添加 !important */
+    color: #ffffff !important;
 }
 
-/* 高亮文本中的代码块样式 */
+/* 高亮文本中的代码样式 */
 mark code {
-    color: #f8f8f2 !important;  /* 代码文本颜色 */
+    color: #00ffa6 !important;
     background: var(--code-bg-color);
     border-radius: 0.2rem;
     padding: 0.1rem 0.35rem;
     border: none;
-}
-
-/* 专门处理反引号 */
-mark code::before,
-mark code::after {
-    content: '`';  /* 确保显示反引号 */
-    color: #f8f8f2 !important;  /* 反引号颜色 */
 }
 
 table a {
@@ -824,23 +818,23 @@ tr:nth-child(2n + 1) {
 /* 文件夹默认样式 */
 .file-node-icon.fa.fa-folder,
 .file-node-icon.fa.fa-folder-open {
-    color: #686bdd !important;
+    color: #ffffff !important;
     transition: color 0.2s ease;
 }
 
 /* 文档默认样式 */
 .file-node-title-name-part {
-    color: #a5a7ff;  /* 浅蓝紫色 */
+    color: #ffffff;  /* 浅蓝紫色 */
     transition: color 0.2s ease;
 }
 
 .file-node-title-ext-part {
-    color: #a5a7ff;  /* 浅蓝紫色 */
+    color: #ffffff;  /* 浅蓝紫色 */
     transition: color 0.2s ease;
 }
 
 .file-node-icon:not(.fa-folder):not(.fa-folder-open) {
-    color: #a5a7ff !important;
+    color: #ffffff !important;
     transition: color 0.2s ease;
 }
 
